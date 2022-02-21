@@ -12,9 +12,9 @@ import CoreGraphics
 
 
 public struct RequestA0: Codable {
-	let tagID: String?
-	let request: RequestType?
-	let data: Data?
+	public let tagID: String?
+	public let request: RequestType?
+	public let data: Data?
 	
 	public init(tagID: String?, request: RequestType?, data: Data?) {
 		self.tagID = tagID
@@ -31,9 +31,9 @@ public enum RequestType: String, Codable {
 }
 
 public struct JoyStatus: Codable {
-	let timeStamp:Double
-	let leftStickPosition: CGPoint
-	let rightButton: Bool
+	public let timeStamp:Double
+	public let leftStickPosition: CGPoint
+	public let rightButton: Bool
 	
 	public init(timeStamp:Double, leftStickPosition: CGPoint, rightButton: Bool) {
 		self.timeStamp = timeStamp
