@@ -28,4 +28,10 @@ public struct JoyStatus: Codable {
 	let timeStamp:Double
 	let leftStickPosition: CGPoint
 	let rightButton: Bool
+	
+	public init(timeStamp:Double, leftStickPosition: CGPoint, rightButton: Bool) {
+		self.timeStamp = timeStamp
+		self.leftStickPosition = leftStickPosition
+		self.rightButton = rightButton
+	}
 }
