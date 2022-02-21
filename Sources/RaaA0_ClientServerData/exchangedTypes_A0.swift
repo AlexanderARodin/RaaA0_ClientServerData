@@ -15,6 +15,12 @@ public struct RequestA0: Codable {
 	let tagID: String?
 	let request: RequestType?
 	let data: Data?
+	
+	public init(tagID: String?, request: RequestType?, data: Data?) {
+		self.tagID = tagID
+		self.request = request
+		self.data = data
+	}
 }
 
 
